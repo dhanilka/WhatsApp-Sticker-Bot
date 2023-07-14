@@ -8,6 +8,7 @@ const client = new Client({
 
 client.on('qr' , (qr)=>{
     qrcode.generate(qr, {small: true});
+    console.log(qr);
 });
 
 client.on('ready', () => {
@@ -22,9 +23,9 @@ client.on('message' , async (msg)=>{
             sendMediaAsSticker:true,
         });
     }else{
-        msg.reply(` ⭐️ 𝐇𝐞𝐥𝐥𝐨 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐁𝐨𝐭   🔥
+        msg.reply(` ⭕️ 𝐇𝐞𝐥𝐥𝐨 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐁𝐨𝐭 
 
-✅ Send a photo with for convert it to sticker ✅
+ *Send a photo to convert it into sticker*
      
         
 🌐 stickerBot v1(beta)
